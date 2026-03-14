@@ -1,29 +1,8 @@
 import { Link } from "react-router-dom";
 import { useContext, type FC } from "react";
 import type { INavButtonProps } from "../../interfaces/components/INavButtonProps";
-import { AthleteContext } from "../../contexts/AthleteContext.tsx";
-import type { IAthleteContext } from "../../interfaces/contexts/IAthleteContext.ts";
 
 const NavButton: FC<INavButtonProps> = ({ destination }) => {
-  const { athletes } = useContext(AthleteContext) as IAthleteContext;
-
-  // Sjekk om det finnes signerte athletes (purchased)
-  const hasSignedAthletes =
-    // returnerer true om den finner noen instanser av athlete.purchased
-    athletes?.some((athlete) => athlete.purchased) ?? false;
-
-  const hasAvailableAthletes =
-    athletes?.some((athlete) => !athlete.purchased) ?? false;
-
-  // Skjuler admin seksjon-knappen om ingen athleter er signert
-  const shouldHideButton =
-    (destination === "/admin" && !hasSignedAthletes) ||
-    (destination === "/finances" && !hasAvailableAthletes);
-
-  if (shouldHideButton) {
-    return null;
-  }
-
   // Tekst for knapp-tittel basert på destination
   let displayTitle;
   switch (destination) {

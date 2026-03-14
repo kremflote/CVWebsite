@@ -1,5 +1,11 @@
+import { WideLayout } from "../components/common/WideLayout";
+
 const CvPage = () => {
-  return <></>;
+  return (
+    <WideLayout>
+      <></>
+    </WideLayout>
+  );
 };
 
 export default CvPage;

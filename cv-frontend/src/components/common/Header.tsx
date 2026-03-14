@@ -1,7 +1,7 @@
 import type { FC } from "react";
 import { NavLink } from "react-router-dom";
 import {
-  headerContainer,
+  header,
   iconMobile,
   logoLink,
   navContainer,
@@ -9,12 +9,13 @@ import {
   navLinkInactive,
   navRow,
   navRowItem,
+  primaryColor,
   textDesktop,
 } from "../../styles/styles";
 
 const Header: FC = () => {
   return (
-    <header className={headerContainer}>
+    <header className={`${header} ${primaryColor}`}>
       <nav className={navContainer}>
         <NavLink to="/" className={logoLink}>
           Marius Kristensen

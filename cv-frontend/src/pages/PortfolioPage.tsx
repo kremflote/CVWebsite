@@ -1,5 +1,11 @@
+import { WideLayout } from "../components/common/WideLayout";
+
 const PortfolioPage = () => {
-  return <></>;
+  return (
+    <WideLayout>
+      <></>
+    </WideLayout>
+  );
 };
 
 export default PortfolioPage;
