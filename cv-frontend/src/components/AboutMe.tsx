@@ -4,14 +4,12 @@ const AboutMe: FC = () => {
   return (
     <section className="max-w-6xl mx-auto py-16 px-4">
       <h1 className="text-center text-wood text-4xl font-semibold mb-6">
-        Om meg
+        Hei!
       </h1>
 
       <hr className="border-wood mb-6" />
 
       <div className="text-center space-y-6 text-gray-800 text-xl">
-        <p>Hei!</p>
-
         <p>
           Mitt navn er Marius Kristensen, en nystartet utvikler og tidligere
           kundebehandler med bakgrunn i salg og relasjonsbygging.

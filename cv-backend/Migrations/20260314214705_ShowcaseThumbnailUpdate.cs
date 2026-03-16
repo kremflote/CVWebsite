@@ -5,24 +5,18 @@
 namespace sportsworld_backend.Migrations
 {
     /// <inheritdoc />
-    public partial class RenamePurchaseStatusToPurchased : Migration
+    public partial class ShowcaseThumbnailUpdate : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
         {
-            migrationBuilder.RenameColumn(
-                name: "PurchaseStatus",
-                table: "Athletes",
-                newName: "Purchased");
+
         }
 
         /// <inheritdoc />
         protected override void Down(MigrationBuilder migrationBuilder)
         {
-            migrationBuilder.RenameColumn(
-                name: "Purchased",
-                table: "Athletes",
-                newName: "PurchaseStatus");
+
         }
     }
 }

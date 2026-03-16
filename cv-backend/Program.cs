@@ -1,12 +1,12 @@
 using Microsoft.EntityFrameworkCore;
-using sportsworld_backend.Contexts;
+using cv_backend.Contexts;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
-builder.Services.AddDbContext<SportsWorldContext>(
-    options => options.UseSqlite("Data source = Databases/SportsWorldData.db")
+builder.Services.AddDbContext<CVContext>(
+    options => options.UseSqlite("Data source = Databases/CVData.db")
 );
 
 builder.Services.AddCors(
