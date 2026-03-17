@@ -1,9 +1,0 @@
-import type { FC } from "react";
-import type { IProviderProps } from "../../interfaces/components/IProviderProps";
-
-// Layout for seksjoner med smallere maksbredde
-export const NarrowLayout: FC<IProviderProps> = ({ children }) => {
-  const portalContainerStyling = "max-w-[600px] mx-auto ";
-
-  return <section className={portalContainerStyling}>{children}</section>;
-};

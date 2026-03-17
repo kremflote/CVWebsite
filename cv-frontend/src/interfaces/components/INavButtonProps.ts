@@ -1,9 +1,4 @@
-export type destinationVariant =
-  | "/"
-  | "/admin"
-  | "/finances"
-  | "/venues"
-  | "/register";
+export type destinationVariant = "/" | "/portfolio" | "/cv";
 
 export interface INavButtonProps {
   destination: destinationVariant;

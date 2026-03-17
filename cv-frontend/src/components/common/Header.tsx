@@ -18,7 +18,10 @@ const Header: FC = () => {
     <header className={`${header} ${primaryColor}`}>
       <nav className={navContainer}>
         <NavLink to="/" className={logoLink}>
-          Marius Kristensen
+          <span className=" text-6xl font-nunito">Marius</span>
+          <span className="block text-4xl ml-16 font-nunito -mt-3">
+            Kristensen
+          </span>
         </NavLink>
 
         <ul className={navRow}>

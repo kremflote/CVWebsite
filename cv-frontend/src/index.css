@@ -1,8 +1,9 @@
 @import "tailwindcss";
 
 @theme {
-  --color-marble: #323232;
+  --color-marble: #242424;
   --color-concrete: #e5e4e2;
   --color-travertine: #e1d9cc;
   --color-wood: #98765b;
+  --color-wood-dark: #66503d;
 }
