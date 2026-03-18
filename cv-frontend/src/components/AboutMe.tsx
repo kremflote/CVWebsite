@@ -2,7 +2,7 @@ import type { FC } from "react";
 
 const AboutMe: FC = () => {
   return (
-    <section className="max-w-6xl mx-auto py-16 px-4">
+    <section className="py-16 px-4">
       <h1 className="text-center text-wood text-4xl font-semibold mb-6">
         Hei!
       </h1>
