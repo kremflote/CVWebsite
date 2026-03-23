@@ -101,8 +101,8 @@ const SkillSection: FC = () => {
 
       <hr className="border-wood mt-10" />
 
-      <div className="mt-6 h-[300px]">
-        <div className="mt-6 h-[570px]">
+      <div className="mt-6">
+        <div className=" ">
           <div className={!selectedSkill ? "invisible" : ""}>
             {selectedSkill && formatDescription(selectedSkill.description)}
           </div>

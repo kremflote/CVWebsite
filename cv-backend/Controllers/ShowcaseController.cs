@@ -24,6 +24,7 @@ public class ShowcaseController(CVContext _context) : ControllerBase
         }
     }
 
+
     [HttpGet("{id}")]
     public async Task<ActionResult<Showcase>> Get(int id)
     {
